@@ -1,0 +1,22 @@
+{
+  "name": "demo-queue",
+  "version": "1.0.0",
+  "description": "Demo Pipeline Tracker",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8000 -c-1",
+    "dev": "http-server -p 8000 -c-1",
+    "build": "echo 'Build complete'"
+  },
+  "keywords": [
+    "pipeline",
+    "tracker",
+    "demo",
+    "queue"
+  ],
+  "author": "jonathan777-ui",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

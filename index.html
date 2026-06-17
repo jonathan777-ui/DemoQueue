@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Pipeline Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 Demo Pipeline Tracker</h1>
+            <p class="subtitle">Monitor and manage your pipeline queue</p>
+        </header>
+
+        <main class="main-content">
+            <div class="controls">
+                <input type="text" id="taskInput" placeholder="Enter a task..." class="input-field">
+                <select id="prioritySelect" class="priority-select">
+                    <option value="low">Low Priority</option>
+                    <option value="medium" selected>Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+                <button id="addBtn" class="btn btn-primary">Add Task</button>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>Total Tasks</h3>
+                    <p class="stat-number" id="totalTasks">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>In Progress</h3>
+                    <p class="stat-number" id="inProgressTasks">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Completed</h3>
+                    <p class="stat-number" id="completedTasks">0</p>
+                </div>
+            </div>
+
+            <div class="pipeline-section">
+                <h2>Pipeline Queue</h2>
+                <div class="pipeline-stages">
+                    <div class="stage">
+                        <h3 class="stage-title">📋 Pending</h3>
+                        <div id="pendingStage" class="stage-content"></div>
+                    </div>
+                    <div class="stage">
+                        <h3 class="stage-title">⚙️ Processing</h3>
+                        <div id="processingStage" class="stage-content"></div>
+                    </div>
+                    <div class="stage">
+                        <h3 class="stage-title">✅ Completed</h3>
+                        <div id="completedStage" class="stage-content"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
